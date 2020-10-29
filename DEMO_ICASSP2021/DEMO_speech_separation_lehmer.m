@@ -23,8 +23,8 @@ NFFT = 2048;
 n_overlap = NFFT * 3/4;
 window = hamming(NFFT, 'periodic');
 
-n_src = 4;
-% n_src = 3;
+% n_src = 4;
+n_src = 3;
 file_name = ['../audiofiles/dev1_female' int2str(n_src) '_liverec_130ms_1m'];
 [data, fs] = audioread([file_name '_mix.wav']);
 mixture = data'; % n_chan by n_sample
@@ -67,6 +67,5 @@ fprintf('\nSDR|SIR|ISR|SAR:  %.2f | %.2f | %.2f| %.2f\n', mean(SDR_anh), mean(SI
 
 for i = 1:n_src
     out = squeeze(y_t_anh(i, :, :));
-    audiowrite([file_name '_out_' int2str(i) '.wav'], 0.9 * out / max(abs(out(:))), fs);
+    audiowrite([file_name '_out_dsfwlm_' int2str(i) '.wav'], 0.9 * out / max(abs(out(:))), fs);
 end
-

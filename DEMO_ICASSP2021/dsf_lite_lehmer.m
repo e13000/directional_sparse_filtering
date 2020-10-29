@@ -163,11 +163,12 @@ function [cost, grad] = cost_function(param, X, ralpha, norm_eps)
     Y2 = 1 - abs(angle_).^2;
     [Y2_min, min_idx] = min(Y2, [], 1);
 
-    w(w < 0) = 0; w = w + alpha;
+    wmask = w < 0;
+    w(wmask) = 0; w = w + alpha;
+    Y2 = Y2 + norm_eps; % prevent Y2 from going to zero
     [Y2_min, minIdx] = min(Y2, [], 1);
 
     Y2_contra = Y2 ./ Y2_min;
-    Y2_contra(minIdx(Y2_min == 0), Y2_min == 0) = 1;
 
     Dr2 = Y2_contra.^(r - 2);
     Dr1 = Dr2 .* Y2_contra;
@@ -177,14 +178,12 @@ function [cost, grad] = cost_function(param, X, ralpha, norm_eps)
     wSumDr1 = sum(w .* Dr1, 1);
 
     g = wSumDr ./ wSumDr1;
-    g(Y2_min == 0) = 0;
     g = sum(Y2_min .* g, 2);
 
     dgdD = (w .* Dr2 ./ wSumDr1.^2) .* ((r - 1) .* wSumDr - r .* Y2_contra .* wSumDr1);
-    dgdD(:, Y2_min == 0) = 0;
+    dgdw = Y2_min .* (Dr .* wSumDr1 - Dr1 .* wSumDr) ./ (wSumDr1.^2);
+    dgdw(wmask) = 0;
 
-    dgdw = Y2_min .* (Dr .* wSumDr1 - Dr1 .* wSumDr) ./ (wSumDr1.^2) ./ (K + alpha * N);
-    dgdw(:, Y2_min == 0) = 0;
     gradw = mean(dgdw, 2);
 
     cost = (1 / K) * g;

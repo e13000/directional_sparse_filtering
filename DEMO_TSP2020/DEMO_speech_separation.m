@@ -23,8 +23,8 @@ NFFT = 2048;
 n_overlap = NFFT * 3/4;
 window = hamming(NFFT, 'periodic');
 
-n_src = 4;
-% n_src = 3;
+% n_src = 4;
+n_src = 3;
 file_name = ['../audiofiles/dev1_female' int2str(n_src) '_liverec_130ms_1m'];
 [data, fs] = audioread([file_name '_mix.wav']);
 mixture = data'; % n_chan by n_sample
