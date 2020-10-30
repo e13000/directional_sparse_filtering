@@ -1,8 +1,8 @@
-%	This permutation alignment algorithm implements a simplified version 
+% This permutation alignment algorithm implements a simplified version 
 % of [2] using linear assignment algorithm, whereby a single centroid 
-%	is used for each band, cross-band alignments are done in hierarchical
+% is used for each band, cross-band alignments are done in hierarchical
 % manner from bottom up. Fine tuning based on harmonic and adjacent
-%	frequencies [3] is also utilized.
+% frequencies [3] is also utilized.
 %
 % Notes
 % -----
