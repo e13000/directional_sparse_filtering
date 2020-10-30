@@ -2,7 +2,7 @@ clear all; close all;
 addpath (genpath('..'));
 
 % Reproducible random stream for parfor
-seed = 2020;
+seed = 2017;
 rng(seed, 'combRecursive');
 
 o.A_init = [];
@@ -46,7 +46,7 @@ P = zeros(n_freq, n_frame, n_src);
 parfor f = 1:n_freq
     x_f = squeeze(X(f, :, :)).'; % x_f: n_chan by n_frame
 
-    rng(seed+f, 'combRecursive'); % For reproducible results
+    rng(seed, 'combRecursive'); % For reproducible results
     [~, ~, cos2, Jm] = dsf_lite_lehmer(x_f, n_src, ralpha, o);
     P(f, :, :) = calc_softmask(cos2, b_)';
 end
