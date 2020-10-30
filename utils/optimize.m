@@ -1,6 +1,6 @@
 %  Minimization of real-valued functions of complex-valued arguments or 
 %  real-valued functions of mixed complex-valued and real-valued arguments 
-%	 using real-valued LBFGS toolbox.
+%  using real-valued LBFGS toolbox.
 %
 %  minFunc should be in MATLAB's path.
 %
