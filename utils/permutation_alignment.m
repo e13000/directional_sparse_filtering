@@ -6,7 +6,7 @@
 %
 % Notes
 % -----
-% 	This program is distributed only for non-commercial research use
+%   This program is distributed only for non-commercial research use
 %   at universities, academic institutions, or non-profit organizations. 
 %   Commercial uses and redistribution are not permitted without
 %   permission from the authors.
@@ -14,18 +14,18 @@
 %   Please kindly cite the following papers if you use or modify any 
 %   part of this program:
 %
-%	  [1] A. H. T. Nguyen, V. G. Reju, and A. W. H. Khong, “Directional Sparse Filtering 
-%	  for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE 
-%	  Transactions on Signal Processing, vol. 68, pp. 1990-2003, Mar. 2020.
+%   [1] A. H. T. Nguyen, V. G. Reju, and A. W. H. Khong, “Directional Sparse Filtering 
+%   for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE 
+%   Transactions on Signal Processing, vol. 68, pp. 1990-2003, Mar. 2020.
 %
 %   [2] L. Wang, “Multi-band multi-centroid clustering based permutation alignment for 
 %   frequency-domain blind speech separation,” Digit. Signal Process., vol. 31, pp. 
 %   79–92, Aug. 2014.
 %
-%	  [3] H. Sawada, S. Araki, and S. Makino, “Underdetermined convolutive
-%	  blind source separation via frequency bin-wise clustering and permutation 
-%	  alignment,” IEEE Trans. Audio. Speech. Lang. Processing, vol. 19,
-%	  no. 3, pp. 516–527, Jan. 2011.
+%   [3] H. Sawada, S. Araki, and S. Makino, “Underdetermined convolutive
+%   blind source separation via frequency bin-wise clustering and permutation 
+%   alignment,” IEEE Trans. Audio. Speech. Lang. Processing, vol. 19,
+%   no. 3, pp. 516–527, Jan. 2011.
 %
 %   Written by Anh H. T. Nguyen (nguyenha001@e.ntu.edu.sg)
 %   Copyright (c) 2020, Anh H. T. Nguyen. All rights reserved.
