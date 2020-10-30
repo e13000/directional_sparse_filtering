@@ -18,9 +18,9 @@
 %	  for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE 
 %	  Transactions on Signal Processing, vol. 68, pp. 1990-2003, Mar. 2020.
 %
-%	  [2] L. Wang, “Multi-band multi-centroid clustering based permutation alignment for 
+%   [2] L. Wang, “Multi-band multi-centroid clustering based permutation alignment for 
 %   frequency-domain blind speech separation,” Digit. Signal Process., vol. 31, pp. 
-%	  79–92, Aug. 2014.
+%   79–92, Aug. 2014.
 %
 %	  [3] H. Sawada, S. Araki, and S. Makino, “Underdetermined convolutive
 %	  blind source separation via frequency bin-wise clustering and permutation 
