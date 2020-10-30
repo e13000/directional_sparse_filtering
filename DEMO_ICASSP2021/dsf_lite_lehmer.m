@@ -57,11 +57,11 @@
 %
 %     K. Watcharasupat, A. H. T. Nguyen, C.-H. Ooi, and A. W. H. Khong, "Directional
 %     Sparse Filtering using Weighted Lehmer Mean for Blind Separation of Unbalanced
-%     Speech Mixtures."
+%     Speech Mixtures," submitted to ICASSP2021.
 %
-%	  A. H. T. Nguyen, V. G. Reju, and A. W. H. Khong, “Directional Sparse Filtering
-%	  for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE
-%	  Transactions on Signal Processing, vol. 68, pp. 1990-2003, Mar. 2020.
+%     A. H. T. Nguyen, V. G. Reju, and A. W. H. Khong, “Directional Sparse Filtering
+%     for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE
+%     Transactions on Signal Processing, vol. 68, pp. 1990-2003, Mar. 2020.
 %
 %   Written by Anh H. T. Nguyen (nguyenha001@e.ntu.edu.sg) and Karn Watcharasupat (karn001@e.ntu.edu.sg)
 %   Copyright (c) 2020, Anh H. T. Nguyen and Karn Watcharasupat. All rights reserved.
@@ -165,7 +165,7 @@ function [cost, grad] = cost_function(param, X, ralpha, norm_eps)
 
     wmask = w < 0;
     w(wmask) = 0; w = w + alpha;
-    Y2 = Y2 + norm_eps; % prevent Y2 from going to zero
+    Y2 = Y2 + eps; % prevent Y2 from going to zero
     [Y2_min, minIdx] = min(Y2, [], 1);
 
     Y2_contra = Y2 ./ Y2_min;
