@@ -4,7 +4,7 @@ MATLAB Code of the following paper:
 
 K. Watcharasupat, A. H. T. Nguyen, C.-H. Ooi, and A. W. H. Khong, "Directional
 Sparse Filtering using Weighted Lehmer Mean for Blind Separation of Unbalanced
-Speech Mixtures," submitted to ICASSP2021.
+Speech Mixtures," to be presented at the 2021 IEEE International Conference on Acoustics, Speech and Signal Processing.
 
 A. H. T. Nguyen, V. G. Reju, and A. W. H. Khong, “Directional Sparse Filtering 
 for Blind Estimation of Under-determined Complex-valued Mixing Matrices,” IEEE 
