@@ -12,6 +12,6 @@ A. H. T. Nguyen, V. G. Reju, A. W. H. Khong and I. Y. Soon, "Learning complex-va
 https://github.com/karnwatcharasupat/directional-sparse-filtering-tf
 
 ## Usage
-1. Compile the mex files for minFunc by running ./lib/minFunc/mexAll.m
-2. Run ./DEMO_TSP2020/DEMO_speech_separation.m or ./DEMO_ICASSP2021/DEMO_speech_separation_lehmer.m to separate some SISEC2011 mixtures
+1. Compile the mex files for minFunc by running `./lib/minFunc/mexAll.m`
+2. Run `./DEMO_TSP2020/DEMO_speech_separation.m` or `./DEMO_ICASSP2021/DEMO_speech_separation_lehmer.m` to separate some SISEC2011 mixtures
 3. (Optionally) Edit the demos separate your own mixtures.
